@@ -9,7 +9,45 @@
   <a-assets>
     <img id="sky" src="resources/sky-ocean.jpg">
   </a-assets>
+  
+  <!-- Sky -->
   <a-sky src="#sky" radius="100"></a-sky>
+  
+  <!-- Beer Pong -->
+  <a-entity id="beer-pong" position="0.32 0.28 3.77" rotation="0 65 0">
+    <a-entity n-spawner="res:interactables/pingpong-ball" position="0 0 0"></a-entity>
+    <a-entity id="beer-pong-left" position="-2 0 0" rotation="0 0 0">
+      <a-entity n-spawner="res:objects/cup" position="0 0 0"></a-entity>
+      <a-entity n-spawner="res:objects/cup" position="-0.1 0 -0.15"></a-entity>
+      <a-entity n-spawner="res:objects/cup" position="0.1 0 -0.15"></a-entity>
+      <a-entity n-spawner="res:objects/cup" position="0.2 0 -0.3"></a-entity>
+      <a-entity n-spawner="res:objects/cup" position="0 0 -0.3"></a-entity>
+      <a-entity n-spawner="res:objects/cup" position="-0.2 0 -0.3"></a-entity>
+      <a-entity n-spawner="res:objects/cup" position="-0.3 0 -0.45"></a-entity>
+      <a-entity n-spawner="res:objects/cup" position="-0.1 0 -0.45"></a-entity>
+      <a-entity n-spawner="res:objects/cup" position="0.1 0 -0.45"></a-entity>
+      <a-entity n-spawner="res:objects/cup" position="0.3 0 -0.45"></a-entity>
+    </a-entity>
+  </a-entity>
+  
+  <!-- Sports Stuff -->
+  <a-entity n-spawner="res:interactables/flying-disc" position="21 0.32 11" rotation="0 0 0"></a-entity>
+  <a-entity n-spawner="res:interactables/basketball" position="21 0.32 11" rotation="0 0 0"></a-entity>
+  <a-entity n-spawner="res:interactables/soccerball" position="21 0.32 11" rotation="0 0 0"></a-entity>
+  <a-entity n-spawner="res:interactables/football" position="21 0.32 11" rotation="0 0 0"></a-entity>
+
+  <!-- Animals -->
+  <a-entity n-object="res:objects/panda-standing" position="-4 0 1" scale="4 4 4" rotation="0 20 0"></a-entity>
+  <a-entity n-object="res:objects/bear-standing" position="-2 0 0" scale="4 4 4"></a-entity>
+  <a-entity n-object="res:objects/dog-standing" position="0 0 0" scale="4 4 4"></a-entity>
+  <a-entity n-object="res:objects/cat-standing" position="2 0 1" scale="4 4 4" rotation="0 -20 0"></a-entity>									      
+	
+  <!-- Glow Sticks -->
+  <a-entity n-spawner="res:interactables/glowstick-green" position="-3.5 1 -11" rotation="30 0 0"></a-entity>
+  <a-entity n-spawner="res:interactables/glowstick-purple" position="-4 1 -11" rotation="30 0 0"></a-entity>
+  <a-entity n-spawner="res:interactables/glowstick-red" position="-2.5 1 -11" rotation="30 0 0"></a-entity>
+  <a-entity n-spawner="res:interactables/glowstick-orange" position="-2 1 -11" rotation="30 0 0"></a-entity>
+  
 </a-scene>
 </body>
 </html>
