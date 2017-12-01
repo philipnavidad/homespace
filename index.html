@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/AltspaceVR/AltspaceSDK/v2.6.1/dist/altspace.min.js"></script>
+</head>
+<body>
+<a-scene altspace="fullspace: true">
+  <a-assets>
+    <img id="sky" src="resources/sky-ocean.jpg">
+  </a-assets>
+  
+  <!-- Sky -->
+  <a-sky src="#sky" radius="100"></a-sky>
+  
+  <!-- Images -->
+  
+  <!-- Native Resources -->
+  <a-entity n-spawner="res:interactables/flying-disc" position="1 1 2" rotation="0 0 0"></a-entity>
+  <a-entity n-spawner="res:interactables/basketball" position="2 1 3" rotation="0 0 0"></a-entity>
+  <a-entity n-spawner="res:interactables/glowstick-green" position="-3.5 1 5" rotation="30 0 0"></a-entity>
+  <a-entity n-spawner="res:interactables/glowstick-purple" position="-4 1 5" rotation="30 0 0"></a-entity>
+  <a-entity n-spawner="res:interactables/glowstick-red" position="-2.5 1 5" rotation="30 0 0"></a-entity>
+  <a-entity n-spawner="res:interactables/glowstick-orange" position="-2 1 5" rotation="30 0 0"></a-entity>
+
+</a-scene>
+</body>
+</html>
